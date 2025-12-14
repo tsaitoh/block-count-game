@@ -8,7 +8,7 @@ if (!app) throw new Error('Missing #app')
 app.innerHTML = `
   <div class="layout">
     <header class="header">
-      <div class="title">ブロック数あて</div>
+      <div class="title">ブロック数あてゲーム</div>
       <div class="sub">不正解なら別角度で最大3回まで</div>
     </header>
 
@@ -21,9 +21,9 @@ app.innerHTML = `
         <div class="row">
           <label class="label" for="sizeSelect">サイズ</label>
           <select id="sizeSelect" class="select">
-            <option value="3">3×3</option>
+            <option value="3" selected>3×3</option>
             <option value="4">4×4</option>
-            <option value="5" selected>5×5</option>
+            <option value="5">5×5</option>
           </select>
         </div>
         <div class="row">
